@@ -1,0 +1,17 @@
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.show-element {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hide-element {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}

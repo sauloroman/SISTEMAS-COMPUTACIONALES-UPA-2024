@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+.text-center {
+  text-align: center;
+}
+
+.df-shadow {
+  box-shadow: 0 5px 5px rgb( 0 0 0 / .15);
+}
+
+.df-border {
+  border: 1px solid v.$color-brown;
+}
+
+.mb-4 {
+  margin-bottom: v.$gap;
+}
+
+.section-space {
+  padding: 1rem 0;
+}

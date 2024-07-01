@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.grid {
+
+  display: grid;
+  gap: calc( v.$gap * .5 );
+  align-items: center;
+
+  &-2cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

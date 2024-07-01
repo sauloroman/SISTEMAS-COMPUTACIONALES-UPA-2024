@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-column-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-end {
+    justify-content: flex-end;
+  }
+
+  &-start {
+    justify-content: flex-start;
+  }
+
+}

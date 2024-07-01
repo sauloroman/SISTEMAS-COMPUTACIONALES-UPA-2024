@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: v.$color-white;
+  color: v.$color-green-dark;
+}
+
+a:link, a:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea, select, button {
+  background-color: none;
+  border: none;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}

@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+.btn {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  transition: all .4s ease-out;
+  
+  &--black {
+    background-color: v.$color-green-dark;
+    color: v.$color-white;
+    text-transform: uppercase;
+    font-family: v.$font-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: darken( v.$color-white, 30% );
+      color: v.$color-white;
+    }
+  }
+}

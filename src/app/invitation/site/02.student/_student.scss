@@ -1,0 +1,41 @@
+@use '../../../../scss/abstracts/variables' as v;
+
+.student {
+ 
+  margin: 1rem 0 2rem;
+
+  &__container {
+    padding: 2rem;
+    background-color: v.$color-green-light;
+  }
+
+  &__name {
+    font-family: v.$font-serif;
+    text-align: center;
+    padding: 2rem 0;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    max-width: 8rem;
+    opacity: .7;
+  }
+
+  &__separator {
+    width: 80%;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    opacity: .7;
+  }
+
+  &__content {
+    line-height: 1.7;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+}
