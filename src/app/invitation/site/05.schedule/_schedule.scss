@@ -1,0 +1,75 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.schedule {
+
+  background-size: contain;
+  background-repeat: space;
+  background-attachment: fixed;
+
+  &__line {
+    @include m.displayLine( 7em, v.$color-light );
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__message {
+    max-width: 20rem;
+    margin-bottom: 6rem;
+  }
+
+  &__list {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  &__item {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  
+  &__hour {
+    width: 5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    // font-family: v.$font-serif;
+    color: v.$color-green;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  &__separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    width: 4rem;
+    height: 1px;
+    background-color: v.$color-light;
+  }
+
+  &__text {
+    width: 8rem;
+    text-align: center;
+    // font-family: v.$font-serif;
+    color: v.$color-green-dark;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+
+  &__icon {
+    width: 5rem;
+
+    &--band {
+      width: 4rem;
+    }
+
+  }
+
+
+}

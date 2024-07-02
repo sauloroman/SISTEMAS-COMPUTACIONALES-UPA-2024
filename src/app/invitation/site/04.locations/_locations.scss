@@ -1,0 +1,77 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.locations {
+  
+  &__icon {
+    max-width: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__image {
+    max-width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  &__card {
+    padding: 3rem 1rem;
+    background-color: v.$color-green-extralight;
+    margin-bottom: 4rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__type, &__hour {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: v.$color-brown;
+    letter-spacing: 2px;
+  }
+
+  &__hour {
+    display: inline-block;
+    margin-bottom: 1rem;
+    // border-bottom: 1px solid currentColor;
+    // padding-bottom: 1px;
+  }
+
+  &__name {
+    font-size: 3.2rem;
+    font-family: v.$font-serif;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+  }
+
+  &__address {
+    width: 90%;
+    line-height: 2;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    width: 75%;
+
+    a {
+      color: v.$color-text;
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    @include m.horizontalScroll();
+  }  
+
+  &__photo {
+    max-width: 25rem;
+    height: 100%;
+  }
+
+}

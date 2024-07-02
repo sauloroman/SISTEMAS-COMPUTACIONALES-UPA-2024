@@ -4,12 +4,15 @@
 @use './layout';
 
 // Authentication
+
+// Invitation
 @use '../app/invitation/site/components/music/music';
+@use '../app/invitation/site/components/modal/modal';
 
 @use '../app/invitation/site/01.hero/hero';
 @use '../app/invitation/site/02.student/student';
 @use '../app/invitation/site/03.timer/timer';
-
-// Invitation
+@use '../app/invitation/site/04.locations/locations';
+@use '../app/invitation/site/05.schedule/schedule';
 
 @use './base/utilities';

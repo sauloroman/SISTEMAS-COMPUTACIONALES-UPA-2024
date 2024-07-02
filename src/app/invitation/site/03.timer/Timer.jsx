@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import infiniteIcon from '../../../../assets/img/infinite-icon.png';
 import saveTheDate from '../../../../assets/img/save-the-date.png';
-import timerFlowers from '../../../../assets/img/timer-flowers.png';
 
 export const Timer = () => {
 
@@ -54,11 +53,8 @@ export const Timer = () => {
   }, [targetDate]);
 
   return (
-    <section className="timer mb-4">
-      <div className="timer__container container df-border">
-      <div className="flex flex-center">
-          <img className='timer__flowers timer__flowers--right' src={ timerFlowers } alt="White flowers" />
-        </div>
+    <section className="timer">
+      <div className="timer__container container">
         <div className="flex flex-center">
           <img className="timer__icon" src={ infiniteIcon } alt="Icono de infinito" />
         </div>
@@ -87,9 +83,6 @@ export const Timer = () => {
           </div>
         </div>
         <p className="timer__text">Contamos los días para el inicio de tu fiesta. Será un momento para recordar con aquellos que quieres.</p>
-        <div className="flex flex-center">
-          <img className='timer__flowers timer__flowers--left' src={ timerFlowers } alt="White flowers" />
-        </div>
       </div>
     </section>
   )

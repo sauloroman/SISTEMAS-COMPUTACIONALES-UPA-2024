@@ -1,22 +1,26 @@
 @use '../abstracts/variables' as v;
 
 .btn {
-  padding: 1.5rem 1rem;
+  padding: 1.3rem;
   width: 90%;
   transition: all .4s ease-out;
+  font-size: 1.2rem;
+  font-family: v.$font-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   
   &--green {
     background-color: v.$color-green;
     color: v.$color-white;
-    text-transform: uppercase;
-    font-family: v.$font-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 1px;
 
     &:hover {
       background-color: darken( v.$color-white, 30% );
       color: v.$color-white;
     }
   }
+
+  &--brown {
+    background-color: v.$color-light;
+  }
+
 }

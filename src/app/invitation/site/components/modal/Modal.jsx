@@ -1,6 +1,6 @@
 
 
-export const Rain = () => {
+export const Modal = () => {
 
 
   return (
