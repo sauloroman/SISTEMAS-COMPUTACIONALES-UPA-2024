@@ -1,0 +1,77 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.timer {
+
+  &__container {
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    max-width: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__message {
+    max-width: 20rem;
+    margin-bottom: 4rem;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: v.$font-serif;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: v.$color-brown;
+    color: v.$color-white;
+    padding: .3rem;
+  }
+
+  &__type {
+    font-weight: 700;
+    font-family: v.$font-serif;
+  }
+
+  &__flowers {
+    max-width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    
+    &--left {
+      transform: translate(-25%, 10%);
+      margin-top: -2.5rem;
+    }
+
+    &--right {
+      transform: rotate(-180deg) translate(-25%, 15%);
+      margin-bottom: -4.5rem;
+    }
+  }
+
+}

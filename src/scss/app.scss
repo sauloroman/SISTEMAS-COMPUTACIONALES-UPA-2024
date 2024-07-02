@@ -4,8 +4,12 @@
 @use './layout';
 
 // Authentication
+@use '../app/invitation/site/components/music/music';
+
 @use '../app/invitation/site/01.hero/hero';
 @use '../app/invitation/site/02.student/student';
+@use '../app/invitation/site/03.timer/timer';
+
 // Invitation
 
 @use './base/utilities';

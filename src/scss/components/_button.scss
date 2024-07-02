@@ -2,15 +2,16 @@
 
 .btn {
   padding: 1.5rem 1rem;
-  width: 100%;
+  width: 90%;
   transition: all .4s ease-out;
   
-  &--black {
-    background-color: v.$color-green-dark;
+  &--green {
+    background-color: v.$color-green;
     color: v.$color-white;
     text-transform: uppercase;
     font-family: v.$font-serif;
     font-size: 1.4rem;
+    font-weight: 700;
     letter-spacing: 1px;
 
     &:hover {

@@ -1,0 +1,13 @@
+@use '../../../../../scss/abstracts/variables' as v;
+@use '../../../../../scss/abstracts/mixins' as m;
+
+.music {
+
+  display: flex;
+  justify-content: center;
+
+  &__image {
+    max-width: 20rem;
+  }
+
+}
