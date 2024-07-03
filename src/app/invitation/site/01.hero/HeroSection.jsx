@@ -1,7 +1,6 @@
 import careerName from '../../../../assets/img/hero-title.png';
 import birrete from '../../../../assets/img/birrete.png';
 import message from '../../../../assets/img/hero-message.png';
-import { Rain } from '../components';
 
 export const HeroSection = () => {
   return (

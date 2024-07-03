@@ -1,4 +1,4 @@
-import scheduleBg from '../../../../assets/img/bg-student.png';
+import scheduleBg from '../../../../assets/img/student-bg.png';
 import itineraryMessage from '../../../../assets/img/itinerary-message.png';
 import startsIcon from '../../../../assets/img/entrance-icon.png';
 import coctailIcon from '../../../../assets/img/coctails-icon.png';
@@ -10,7 +10,8 @@ import fireIcon from '../../../../assets/img/fire-icon.png';
 
 export const Schedule = () => {
   return (
-    <div className="schedule" style={{ backgroundImage: `url(${scheduleBg})`}}>
+    <div className="schedule">
+      <div className="schedule__overlay" style={{ backgroundImage: `url(${scheduleBg})`}}></div>
       <div className="schedule__line"></div>
       <div className="schedule__container container">
         <div className="flex flex-column-center">
@@ -76,7 +77,6 @@ export const Schedule = () => {
           <p className="schedule__text">Fin del Evento</p>
         </li>
       </ul>
-      <div className="schedule__line"></div>
     </div>
   )
 }

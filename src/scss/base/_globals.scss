@@ -22,6 +22,7 @@ body {
 a:link, a:visited {
   display: inline-block;
   text-decoration: none;
+  color: v.$color-text;
 }
 
 a:hover, a:active {

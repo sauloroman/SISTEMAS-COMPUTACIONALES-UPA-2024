@@ -3,9 +3,20 @@
 
 .schedule {
 
-  background-size: contain;
-  background-repeat: space;
-  background-attachment: fixed;
+  position: relative;
+  padding-bottom: 4rem;
+
+  &__overlay {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: .3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+  }
 
   &__line {
     @include m.displayLine( 7em, v.$color-light );

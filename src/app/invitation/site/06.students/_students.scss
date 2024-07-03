@@ -1,0 +1,26 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.students {
+  background-color: v.$color-extralight;
+
+  &__message {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 20rem;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  &__line {
+    @include m.displayLine( 5rem, v.$color-green-dark );
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+
+}

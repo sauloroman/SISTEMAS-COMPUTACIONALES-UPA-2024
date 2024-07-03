@@ -15,8 +15,8 @@ export const Locations = () => {
   return (
     <section className='locations'>
       <div className="locations__card">
-        <div className="locations__gallery">
-          <div className="locations__image-box">
+        <div className="locations__gallery locations__gallery--pre">
+          <div className="locations__photo-box">
             <img src={ bellagioImage1 } alt="Imagen de bellagio" className="locations__photo" />
           </div>
           <div className="locations__photo-box">
@@ -52,7 +52,7 @@ export const Locations = () => {
         <button className='btn btn--brown locations__button mb-4'>
           <a target='_blank' href="https://maps.app.goo.gl/rz4DXjZoCyDwZMJYA">Ver Ubicación</a>
         </button>
-        <div className="locations__gallery">
+        <div className="locations__gallery locations__gallery--prom">
           <div className="locations__image-box">
             <img src={ lagoImage1 } alt="Imagen de bellagio" className="locations__photo" />
           </div>

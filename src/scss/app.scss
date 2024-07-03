@@ -14,5 +14,9 @@
 @use '../app/invitation/site/03.timer/timer';
 @use '../app/invitation/site/04.locations/locations';
 @use '../app/invitation/site/05.schedule/schedule';
+@use '../app/invitation/site/06.students/students';
+@use '../app/invitation/site/07.dress-code/dress';
+@use '../app/invitation/site/08.school/school';
+@use '../app/invitation/site/09.footer/footer';
 
 @use './base/utilities';

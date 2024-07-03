@@ -1,0 +1,33 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.dress {
+  background-color: v.$color-white;
+  padding: 4rem 0;
+
+  &__icon {
+    max-width: 5rem;
+  }
+
+  &__message {
+    max-width: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    background-color: inherit;
+    width: 90%;
+    padding: 4rem 2rem;
+    border: 1px solid v.$color-light;
+    margin-bottom: -10rem;
+    position: relative;
+    z-index: 9;
+  }
+
+  &__type {
+    text-align: center;
+    line-height: 1.7;
+  }
+
+}

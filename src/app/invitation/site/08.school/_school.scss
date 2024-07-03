@@ -1,0 +1,56 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.school {
+
+  &__image {
+    opacity: .8;
+    height: 40rem;
+    width: 100%;
+    background-position: 90%;
+    background-attachment: fixed;
+  }
+
+  &__logo {
+    max-width: 8rem;
+  }
+
+  &__container {
+    border: 1px solid #bbb;
+    padding: 4rem 2rem;
+    width: 85%;
+    margin: 0 auto;
+    background-color: v.$color-white;
+    margin-top: -10rem;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  &__message {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 1rem 0;
+  }
+
+  &__career {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    // font-weight: 600;
+    // color: v.$color-brown;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+
+  &__congra {
+    max-width: 20rem;
+    margin: 1rem 0;
+  }
+
+}
