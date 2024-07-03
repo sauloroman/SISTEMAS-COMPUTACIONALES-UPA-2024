@@ -1,5 +1,4 @@
 import upaImage from '../../../../assets/img/upa-image.jpg';
-import sistemasLogo from '../../../../assets/img/career-icon.png'
 import congraImage from '../../../../assets/img/school-congra.png'
 
 export const School = () => {
@@ -19,6 +18,7 @@ export const School = () => {
           <button className='btn btn--brown'>Mira la Magia</button>
         </div>
       </div>
+      <div className="school__line"></div>
     </section>
   )
 }

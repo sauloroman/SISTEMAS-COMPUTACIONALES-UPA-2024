@@ -1,9 +1,8 @@
 import studentSeparator from '../../../../assets/img/student-separator.png';
-import bgStudent from '../../../../assets/img/bg-student.png';
 
 export const StudentSection = () => {
   return (
-    <main className="student" style={{ backgroundImage: `url(${bgStudent})`}}>
+    <main className="student">
       <div className="container student__container">
         <div className="student__line student__line--1"></div>
         <div className="flex flex-center">
