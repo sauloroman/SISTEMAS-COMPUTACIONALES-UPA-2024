@@ -10,7 +10,7 @@ import fireIcon from '../../../../assets/img/fire-icon.png';
 
 export const Schedule = () => {
   return (
-    <div className="schedule">
+    <div className="schedule" id='itinerary'>
       <div className="schedule__overlay" style={{ backgroundImage: `url(${scheduleBg})`}}></div>
       <div className="schedule__line"></div>
       <div className="schedule__container container">

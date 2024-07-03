@@ -4,10 +4,12 @@ import message from '../../../../assets/img/hero-message.png';
 
 export const HeroSection = () => {
   return (
-    <section className="hero">
-      {/* <Rain /> */}
-      <div className="hero__container df-border">
+    <section className="hero" id='home'>
+      <div className="hero__container">
         <div className="hero__date">
+          <div className="flex flex-center">
+            <p className="hero__circle"></p>
+          </div>
           <p className="hero__date-text">27</p>
           <p className="hero__date-text">12</p>
           <p className="hero__date-text">24</p>

@@ -20,6 +20,11 @@
     }
   }
 
+  &__container {
+    padding: 4rem 2rem;
+    background-color: v.$color-extralight;
+  }
+
   &__separator {
     max-width: 100%;
     margin-top: 1rem;

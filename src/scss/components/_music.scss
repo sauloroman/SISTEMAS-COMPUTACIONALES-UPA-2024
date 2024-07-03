@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.music {
+  display: flex;
+  align-items: center;
+
+  
+  &__icon {
+    font-size: 3.2rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+}

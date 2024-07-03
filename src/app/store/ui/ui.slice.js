@@ -6,10 +6,10 @@ export const uiSlice = createSlice({
       isLoading: false,
       isMenuOpen: false,
       theme: 'light',
-      modal: {
-        name: '',
+      alert: {
+        type: 'error',
         isOpen: false,
-        data: null,
+        text: 'Texto de prueba',
       }
     },
     reducers: {

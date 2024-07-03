@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.navigation {
+
+  &__icon {
+    font-size: 3.2rem;
+    cursor: pointer;
+  }
+
+  &__nav {
+    padding: 1rem;
+    background-color: v.$color-extralight;
+    height: 100vh;
+    position: fixed;
+    width: 50%;
+    z-index: 999;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-out;
+
+    &--open {
+      top: 0;
+      left: 50%;
+    }
+
+    &--close {
+      top: 0;
+      left: 100%;
+    }
+  }
+
+  &__header {
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid v.$color-light;
+  }
+
+  &__name {
+    font-family: v.$font-serif;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__list {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  &__item {
+    margin-bottom: 3.2rem;
+    letter-spacing: 1px;
+    font-family: v.$font-serif;
+    
+    a {
+      transition: all .4s ease-out;
+
+      &:hover {
+        width: 100%;
+        background-color: v.$color-brown;
+        color: v.$color-white;
+      }
+    }
+  }
+
+  &__line {
+    @include m.displayLine( 5rem, v.$color-light );
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    width: 100%;
+    padding: .8rem;
+  }
+
+}

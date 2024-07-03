@@ -1,0 +1,60 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+.alert {
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+  color: v.$color-white;
+  left: 50%;
+  padding: 1rem;
+  position: fixed;
+  top: 2%;
+  transform: translateX(-50%);
+  width: 95%;
+  z-index: 99;
+
+  &__visuals {
+    display: flex;
+    align-items: center;
+  }
+
+  &__color {
+    width: 10px;
+    height: 4rem;
+    margin-right: 1rem;
+
+    &--success {
+      background-color: darken(v.$color-success, 20%);
+    }
+
+    &--error {
+      background-color: darken(v.$color-error, 20%);
+    }
+
+  } 
+
+  &__icon {
+    font-size: 2.4rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__type {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}

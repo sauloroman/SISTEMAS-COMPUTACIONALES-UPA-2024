@@ -3,7 +3,7 @@ import dressIcon from '../../../../assets/img/dress-icon.png';
 
 export const DressCode = () => {
   return (
-    <section className="dress">
+    <section className="dress" id='dress'>
       <div className="dress__container container df-shadow">
         <div className="flex flex-column-center">
           <img src={ dressIcon } alt="Dress icon" className="dress__icon" />

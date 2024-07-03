@@ -8,18 +8,29 @@ import { DressCode } from "./07.dress-code/DressCode"
 import { School } from "./08.school/School"
 import { Footer } from "./09.footer/Footer"
 
+import { Alert, TopBar } from "./components"
+
+import { useUI } from "../../hooks/useUI"
+
 export const SitePage = () => {
+
+  const { alert } = useUI();
+
   return (
     <>
-      <HeroSection />
-      <StudentSection />
-      <Timer />
-      <Locations />
-      <Schedule />
-      <Students />
-      <DressCode />
-      <School />
-      <Footer />
+      <TopBar />
+      <div>
+        <HeroSection />
+        <StudentSection />
+        <Timer />
+        <Locations />
+        <Schedule />
+        <Students />
+        <DressCode />
+        <School />
+        <Footer />
+      </div>
+      { alert.isOpen && <Alert /> }
     </>
   )
 }

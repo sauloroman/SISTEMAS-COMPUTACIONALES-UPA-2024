@@ -53,7 +53,7 @@ export const Timer = () => {
   }, [targetDate]);
 
   return (
-    <section className="timer">
+    <section className="timer" id='timer'>
       <div className="timer__container container">
         <div className="flex flex-center">
           <img className="timer__icon" src={ infiniteIcon } alt="Icono de infinito" />

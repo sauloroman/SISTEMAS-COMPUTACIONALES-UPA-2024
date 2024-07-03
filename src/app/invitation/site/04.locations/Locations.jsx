@@ -5,7 +5,7 @@ import bellagioImage1 from '../../../../assets/img/bellagio-1.jpg';
 
 export const Locations = () => {
   return (
-    <section className="locations">
+    <section className="locations" id='locations'>
       <div className="locations__photo-box">
         <img
           src={bellagioImage1}

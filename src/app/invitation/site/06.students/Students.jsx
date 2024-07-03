@@ -2,7 +2,7 @@ import studentsImg from '../../../../assets/img/students-message.png';
 
 export const Students = () => {
   return (
-    <section className="students section-space">
+    <section className="students section-space" id='students'>
       <div className="students__container container">
         <div className="flex flex-column-center">
           <h2 className="heading__secondary text-dark">Los Graduados</h2>

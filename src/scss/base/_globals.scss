@@ -11,9 +11,11 @@
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: v.$color-white;
   color: v.$color-green-dark;

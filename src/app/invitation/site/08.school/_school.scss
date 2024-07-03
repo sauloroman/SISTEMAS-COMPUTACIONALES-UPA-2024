@@ -18,10 +18,10 @@
 
   &__container {
     border: 1px solid #bbb;
-    padding: 4rem 2rem;
-    width: 85%;
+    padding: 4rem;
+    width: 90%;
     margin: 0 auto;
-    background-color: v.$color-white;
+    background-color: v.$color-extralight;
     margin-top: -10rem;
     margin-bottom: 2rem;
     position: relative;
@@ -35,7 +35,7 @@
   }
 
   &__text {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
   }
 
   &__career {

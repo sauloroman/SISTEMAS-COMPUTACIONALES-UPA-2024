@@ -2,9 +2,9 @@ import studentSeparator from '../../../../assets/img/student-separator.png';
 
 export const StudentSection = () => {
   return (
-    <main className="student">
-      <div className="container student__container">
-        <div className="student__line student__line--1"></div>
+    <main className="student" id='tickets'>
+      <div className="student__line student__line--1"></div>
+      <div className="student__container">
         <div className="flex flex-center">
           <h2 className='heading__secondary'>Solo para tí</h2>
         </div>
@@ -14,10 +14,10 @@ export const StudentSection = () => {
         </div>
         <p className="student__text">La graduación es una gran meta en la vida y tú la has alcanzado maravillosamente. ¡Te deseo que sea solo la primera de una larga serie! ¡Felicidades, graduado!</p>
         <div className="flex flex-center">
-          <button className="btn btn--brown">Ver Boletos Digitales</button>
+          <button className="btn btn--green">Ver Boletos Digitales</button>
         </div>
-        <div className="student__line student__line--2"></div>
       </div>
+      <div className="student__line student__line--2"></div>
     </main>
   )
 }
