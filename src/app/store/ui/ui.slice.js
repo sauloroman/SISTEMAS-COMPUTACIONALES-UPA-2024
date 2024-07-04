@@ -18,11 +18,11 @@ export const uiSlice = createSlice({
         state.isLoading = payload;
       },
 
-      setModal: ( state, { payload } ) => {
-        const { name, isOpen, data } = payload;
-        state.modal.name = name;
-        state.isOpen = isOpen;
-        state.data = data;
+      setAlert: ( state, { payload } ) => {
+        const { type, isOpen, text } = payload;
+        state.alert.type = type;
+        state.alert.isOpen = isOpen;
+        state.alert.text = text;
       },
 
       setMenu: ( state, { payload } ) => {
@@ -43,7 +43,7 @@ export const uiSlice = createSlice({
 export const {  
   setIsLoading,
   setMenu,
-  setModal,
+  setAlert,
   activeLightTheme,
   activeDarkTheme,
 } = uiSlice.actions;

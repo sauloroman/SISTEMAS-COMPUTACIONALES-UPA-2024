@@ -9,10 +9,18 @@
   left: 50%;
   padding: 1rem;
   position: fixed;
-  top: 2%;
   transform: translateX(-50%);
   width: 95%;
   z-index: 99;
+  transition: all .4s ease-out;
+  
+  &__show {
+    transform: translate(-50%, 15%);
+  }
+  
+  &__hide {
+    transform: translate(-50%, -120%);
+  }
 
   &__visuals {
     display: flex;
@@ -54,7 +62,7 @@
   }
 
   &__text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 }

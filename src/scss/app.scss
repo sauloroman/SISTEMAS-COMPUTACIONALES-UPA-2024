@@ -4,6 +4,10 @@
 @use './layout';
 
 // Authentication
+@use '../app/auth/login/login';
+@use '../app/auth/login/loginTop/login-top';
+@use '../app/auth/login/loginCenter/login-center';
+@use '../app/auth/login/loginForm/login-form';
 
 // Invitation
 @use '../app/invitation/site/01.hero/hero';
@@ -15,5 +19,15 @@
 @use '../app/invitation/site/07.dress-code/dress';
 @use '../app/invitation/site/08.school/school';
 @use '../app/invitation/site/09.footer/footer';
+
+// Students Page
+@use '../app/invitation/students/students-page';
+@use '../app/invitation/students/StudentsHeader/students-header';
+@use '../app/invitation/students/StudentsItem/students-item';
+@use '../app/invitation/students/StudentsList/students-list';
+@use '../app/invitation/students/StudentsFooter/students-footer';
+
+// Ticket Page
+@use '../app/invitation/ticket/ticket';
 
 @use './base/utilities';

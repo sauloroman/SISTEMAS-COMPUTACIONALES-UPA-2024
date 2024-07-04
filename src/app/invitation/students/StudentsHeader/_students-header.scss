@@ -1,0 +1,38 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.students-header {
+
+  margin-bottom: 2rem;
+
+  &__button {
+    width: 3rem;
+    height: 3rem;
+    background-color: v.$color-light;  
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__message {
+    max-width: 15rem;
+  }
+
+  &__information {
+    text-align: right;
+  }
+
+  &__type {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: v.$color-brown;
+  }
+
+  &__title {
+    font-size: 1rem;
+  }
+
+}

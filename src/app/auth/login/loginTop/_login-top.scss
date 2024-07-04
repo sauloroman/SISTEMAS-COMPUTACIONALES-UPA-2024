@@ -1,0 +1,28 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.login-top {
+
+  &__message {
+    max-width: 5rem;
+  }
+
+  &__icon {
+    color: v.$color-white;
+    font-size: 5rem;
+  }
+
+  &__date {
+    color: v.$color-brown;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    max-width: 25rem;
+  }
+
+}

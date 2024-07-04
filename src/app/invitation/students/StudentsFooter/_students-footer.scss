@@ -1,0 +1,27 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.students-footer {
+
+  margin-top: 1rem;
+
+  &__type {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: v.$color-brown;
+  }
+
+  &__title {
+    font-size: 1rem;
+  }
+
+  &__school {
+    color: v.$color-brown;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+  }
+
+}

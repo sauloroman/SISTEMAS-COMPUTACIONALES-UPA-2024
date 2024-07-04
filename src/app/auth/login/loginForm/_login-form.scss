@@ -1,0 +1,12 @@
+@use '../../../../scss/abstracts/variables' as v;
+@use '../../../../scss/abstracts/mixins' as m;
+
+.login-form {
+  width: 90%;
+  margin: 0 auto;
+
+  &__button {
+    width: 100%;
+    padding: .8rem;
+  }
+}

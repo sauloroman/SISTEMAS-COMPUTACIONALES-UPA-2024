@@ -1,0 +1,154 @@
+@use '../../../scss/abstracts/variables' as v;
+@use '../../../scss/abstracts/mixins' as m;
+
+.ticket {
+  
+  position: relative;
+  background: v.$color-green-light;
+  padding: 2rem;
+
+  &__container {
+    padding: 2rem;
+    background: v.$color-white;
+  }
+
+  &__message {
+    max-width: 20rem;
+    margin-bottom: 2rem;
+  }
+  
+  &__title {
+    font-family: v.$font-serif;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__line {
+    @include m.displayLine(3rem, v.$color-light);
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__name, &__instructions {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: v.$color-brown;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    width: 22rem;
+    margin-bottom: 2rem;
+  }
+
+  &__instructions {
+    line-height: 2;
+    margin-bottom: 1rem;
+  }
+
+  &__table {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid v.$color-brown;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: v.$color-white;
+  }
+
+  &__information {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+  
+    &-left {
+      flex: 1;
+      margin-right: 1rem;
+
+      padding-right: 1rem;
+      border-right: 1px solid v.$color-light;
+    }
+
+    &-right {
+      flex: 1;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border-bottom: 1px solid v.$color-light;
+  }
+  
+  &__numbers {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__number {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  &__concept {
+    text-align: center;
+    padding: .5rem;
+    flex: 1;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  &__folie {
+    padding: 1rem;
+    background-color: v.$color-white;
+    border-top: 1px dashed v.$color-brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__address {
+    width: 20rem;
+    font-size: 1rem;
+
+    span {
+      display: inline-block;
+      color: v.$color-brown;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__ticket {
+    text-align: center;
+    font-size: 1.2rem;
+
+    span {
+      font-size: 1.6rem;
+      color: v.$color-error;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: v.$color-light;  
+    top: 3%;
+    left: 5%;
+  }
+}

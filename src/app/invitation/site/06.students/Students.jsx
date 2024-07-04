@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import studentsImg from '../../../../assets/img/students-message.png';
 
 export const Students = () => {
@@ -10,7 +11,9 @@ export const Students = () => {
         </div>
         <p className="students__text">Formaste parte de un asombroso grupo de personas. Nunca te olvides de quienes pasaron por los mismos retos, tus compañeros.</p>
         <div className="flex flex-center">
-          <button className="btn btn--green students__button">Ver Graduados</button>
+          <Link to='students' className='w-90'>
+              <button className='btn btn--green students__button'>Ver Graduados</button>
+          </Link>
         </div>
         <div className="students__line"></div>
       </div>

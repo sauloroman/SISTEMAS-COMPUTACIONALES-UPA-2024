@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.form {
+
+  &__field {
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    background-color: #e1e1e1;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__span {
+    display: block;
+    text-align: right;
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+
+}

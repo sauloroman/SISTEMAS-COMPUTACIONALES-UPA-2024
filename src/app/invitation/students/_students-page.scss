@@ -1,0 +1,29 @@
+@use '../../../scss/abstracts/variables' as v;
+@use '../../../scss/abstracts/mixins' as m;
+
+.students-page {
+  padding: 2rem 0;
+  background-color: v.$color-green-light;
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: v.$color-white;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, .5);
+  }
+
+  &__content {
+    padding: 1rem;
+    border: 1px solid v.$color-light;
+  }
+
+  &__image-box {
+    margin: 2rem 0;
+  }
+
+  &__image {
+    max-width: 15rem;
+  }
+
+}

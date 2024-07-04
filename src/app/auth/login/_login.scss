@@ -1,0 +1,17 @@
+@use '../../../scss/abstracts/variables' as v;
+@use '../../../scss/abstracts/mixins' as m;
+
+.login {
+
+  height: 100vh;
+  background-color: v.$color-green-light;
+
+  &__container {
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
+
+}

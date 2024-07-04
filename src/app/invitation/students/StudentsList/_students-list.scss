@@ -1,0 +1,9 @@
+@use '../../../../scss/abstracts/variables' as v;
+
+.students-list {
+  border-top: 1px solid v.$color-light;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
