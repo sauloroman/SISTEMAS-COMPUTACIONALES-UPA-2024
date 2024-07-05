@@ -36,7 +36,7 @@ export const Locations = () => {
         />
         <h2 className="heading__secondary">Ubicaciones</h2>
         <img
-          className="locations__image"
+          className="locations__image locations__message"
           src={locationMessage}
           alt="Mensaje de ubicacion"
         />

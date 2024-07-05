@@ -4,7 +4,7 @@ import message from '../../../../assets/img/hero-message.png';
 
 export const HeroSection = () => {
   return (
-    <section className="hero" id='home'>
+    <section className="hero animate__animated animate__zoomIn" id='home'>
       <div className="hero__container">
         <div className="hero__date">
           <div className="flex flex-center">
