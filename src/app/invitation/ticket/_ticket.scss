@@ -151,4 +151,17 @@
     top: 3%;
     left: 5%;
   }
+
+  &__disclaimer {
+    border-top: 1px dashed v.$color-brown;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: right;
+  }
+
+  &__rectangle {
+    background-color: v.$color-light;
+    height: 1rem;
+  }
 }

@@ -4,9 +4,9 @@ export const LoginTop = () => {
   return (
     <div className="login-top">
       <div className="flex flex-center">
-        <i className='bx bx-code-alt login-top__icon' ></i>
-        </div>
-      <div className="login-top__date">Dic | 27 | 2024</div>
+        <p className='logo logo--big'>&lt;ISC /&gt;</p>
+      </div>
+      <div className="login-top__date">27 &mdash; Dic &mdash; 2024</div>
       <div className="flex flex-center">
         <img className='login-top__image' src={ sistemsImage } alt="Sistemas Computacionales Texto Blanco" />
       </div>

@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as v;
+
+.logo {
+  color: v.$color-brown;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+
+  &--big {
+    font-size: 3.2rem;
+  }
+}

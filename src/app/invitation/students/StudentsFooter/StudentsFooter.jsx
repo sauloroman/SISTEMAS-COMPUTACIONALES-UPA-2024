@@ -5,7 +5,7 @@ export const StudentsFooter = () => {
        <p className="students-footer__type">Ingeniero</p>
        <p className="students-footer__title">Sistemas Computacionales</p>
       </div>
-      <div className="students-footer__school">&lt;ISC /&gt;</div>
+      <div className="logo">&lt;ISC /&gt;</div>
     </footer>
   )
 }

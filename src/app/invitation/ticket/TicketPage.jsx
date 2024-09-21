@@ -61,6 +61,10 @@ export const TicketPage = () => {
             <i className="bx bx-left-arrow-alt ticket__icon"></i>
           </div>
         </Link>
+        <div className="ticket__disclaimer">
+          <p className='ticket__text'>Dudas y aclaraciones comunicarse al número <a href="tel: +524499198188">4499198188</a></p>
+        </div>
+        <div className="ticket__rectangle"></div>
       </div>
     </div>
   );

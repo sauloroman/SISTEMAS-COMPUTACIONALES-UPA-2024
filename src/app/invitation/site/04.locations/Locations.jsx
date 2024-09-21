@@ -1,28 +1,29 @@
 import locationIcon from '../../../../assets/img/location-icon.png';
 import locationMessage from '../../../../assets/img/location-message.png';
 import lagoImage1 from '../../../../assets/img/lago-1.jpg';
-import bellagioImage1 from '../../../../assets/img/bellagio-1.jpg';
+import lasPalmasImage from '../../../../assets/img/las-palmas.jpg';
 
 export const Locations = () => {
   return (
     <section className="locations" id='locations'>
       <div className="locations__photo-box">
         <img
-          src={bellagioImage1}
-          alt="Imagen de bellagio"
+          src={lasPalmasImage}
+          alt="Salon Las Palmas Picacho Imagen"
           className="locations__photo"
         />
         <div className="locations__overlay"></div>
       </div>
       <div className="locations__card">
         <p className="locations__type">Prefiesta (solo graduados)</p>
-        <p className="locations__hour">05:00 PM - 11:00 PM</p>
-        <p className="locations__name">Bellagio Garden</p>
+        <p className="locations__date">30 Septiembre 2024</p>
+        <p className="locations__hour">03:00 PM - 08:00 PM</p>
+        <p className="locations__name">Las Palmas Picacho</p>
         <p className="locations__address">
-          Chasela 203 Arboledas de Paso Blanco, 20907 aguascalientes, Ags.
+          Kilometro 14.5, Calvillo - Aguascalientes, 20994 Aguascalientes, Ags.
         </p>
         <button className="btn btn--brown locations__button">
-          <a target="_blank" href="https://maps.app.goo.gl/YBNLm2vmBCN4yayk9">
+          <a target="_blank" href="https://maps.app.goo.gl/ERTi28Y1q1shyAEJ9">
             Ver Ubicación
           </a>
         </button>
@@ -44,6 +45,7 @@ export const Locations = () => {
 
       <div className="locations__card">
         <p className="locations__type">Noche de Gala</p>
+        <p className="locations__date">27 Diciembre 2024</p>
         <p className="locations__hour">08:00 PM - 02:00 AM</p>
         <p className="locations__name">
           Salón Lago <br /> del Marqués
