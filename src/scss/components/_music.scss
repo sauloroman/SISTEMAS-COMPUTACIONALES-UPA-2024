@@ -7,11 +7,19 @@
   
   &__icon {
     font-size: 3.2rem;
+
+    @include m.responsiveDesign('tablet') {
+      font-size: 4rem;
+    }
   }
 
   &__text {
     font-weight: 500;
     font-size: 1.4rem;
+
+    @include m.responsiveDesign('tablet') {
+      font-size: 1.6rem;
+    }
   }
 
 }

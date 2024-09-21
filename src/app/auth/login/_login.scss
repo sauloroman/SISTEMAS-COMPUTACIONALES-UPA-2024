@@ -12,9 +12,15 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    max-width: 50rem;
     width: 95%;
     margin: 0 auto;
     padding-bottom: 2rem;
+
+    @include m.responsiveDesign('tablet') {
+      border: 1px solid #ddd;
+      height: 90%;
+    }
   }
 
 }

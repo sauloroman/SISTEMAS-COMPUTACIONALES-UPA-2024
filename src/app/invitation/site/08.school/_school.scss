@@ -51,6 +51,10 @@
   &__congra {
     max-width: 20rem;
     margin: 1rem 0;
+
+    @include m.responsiveDesign('tablet') {
+      max-width: 30rem
+    }
   }
 
   &__line {

@@ -5,7 +5,14 @@
   padding: 2rem 0;
   background-color: v.$color-green-light;
 
+  @include m.responsiveDesign('tablet') {
+    height: 100vh;
+  }
+  
   &__container {
+    @include m.responsiveDesign('tablet') {
+      width: 50rem;
+    }
     width: 90%;
     margin: 0 auto;
     padding: 1rem;

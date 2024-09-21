@@ -31,6 +31,10 @@
   &__message {
     max-width: 20rem;
     margin-bottom: 6rem;
+
+    @include m.responsiveDesign('tablet') {
+      max-width: 30rem;
+    }
   }
 
   &__list {
@@ -51,6 +55,10 @@
     color: v.$color-green;
     font-weight: 600;
     text-align: center;
+
+    @include m.responsiveDesign('tablet') {
+      font-size: 1.6rem;
+    }
   }
   
   &__separator {
@@ -69,6 +77,10 @@
     color: v.$color-green-dark;
     letter-spacing: 1px;
     font-size: 1rem;
+
+    @include m.responsiveDesign('tablet') {
+      font-size: 1.2rem;
+    }
   }
 
   &__icon {

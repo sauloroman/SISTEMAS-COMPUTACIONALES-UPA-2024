@@ -56,7 +56,7 @@ export const SitePage = () => {
     <>
       <Confetti />
       <TopBar />
-      <div>
+      <div className="container">
         <HeroSection />
         <StudentSection />
         <Timer />

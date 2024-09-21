@@ -24,6 +24,10 @@
   &__message {
     max-width: 20rem;
     margin-bottom: 2rem;
+
+    @include m.responsiveDesign('tablet') {
+      max-width: 30rem;
+    }
   }
 
   &__main {

@@ -20,6 +20,16 @@
 
 }
 
+@mixin responsiveDesign( $breakpoint ) {
+
+  @if $breakpoint == 'tablet' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+}
+
 @mixin horizontalScroll() {
   overflow-y: hidden;
   overflow-x: scroll;

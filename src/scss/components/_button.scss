@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .btn {
   padding: 1.3rem;
@@ -8,6 +9,10 @@
   font-family: v.$font-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  @include m.responsiveDesign('tablet') {
+    font-size: 1.6rem;
+  }
   
   &--green {
     background-color: v.$color-green;

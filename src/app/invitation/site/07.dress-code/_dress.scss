@@ -13,6 +13,10 @@
     max-width: 20rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+
+    @include m.responsiveDesign('tablet') {
+      max-width: 30rem;
+    }
   }
 
   &__container {

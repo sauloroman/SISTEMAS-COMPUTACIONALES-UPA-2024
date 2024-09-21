@@ -12,6 +12,10 @@
     max-width: 20rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
+
+    @include m.responsiveDesign('tablet') {
+      max-width: 30rem;
+    }
   }
   
   &__card {
@@ -24,6 +28,12 @@
       margin-bottom: 0;
     }
   }
+  
+  &__type {
+    @include m.responsiveDesign('tablet') {
+      text-align: right;
+    }
+  } 
 
   &__type, &__hour, &__date {
     text-transform: uppercase;
@@ -31,6 +41,10 @@
     font-weight: 600;
     color: v.$color-brown;
     letter-spacing: 2px;
+
+    @include m.responsiveDesign('tablet') {
+      font-size: 1.4rem;
+    }
   }
 
   &__date {
@@ -112,6 +126,10 @@
     height: 25rem;
     width: 100%;
     position: relative;
+
+    @include m.responsiveDesign('tablet') {
+      height: 35rem;
+    }
   }
 
   &__overlay {

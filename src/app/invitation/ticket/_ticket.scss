@@ -7,9 +7,20 @@
   background: v.$color-green-light;
   padding: 3rem 2rem;
 
+  @include m.responsiveDesign('tablet') {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__container {
     padding: 2rem;
     background: v.$color-white;
+
+    @include m.responsiveDesign('tablet') {
+      width: 80rem;
+    }
   }
 
   &__message {
@@ -24,7 +35,7 @@
     margin-bottom: 1rem;
   }
   
-  &__line {
+&__line {
     @include m.displayLine(3rem, v.$color-light);
     margin-top: -1rem;
     margin-bottom: 1rem;
@@ -119,6 +130,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include m.responsiveDesign('tablet') {
+      width: 80rem;
+    }
+    
   }
 
   &__address {
@@ -158,10 +174,18 @@
     font-size: 1rem;
     padding: 1rem;
     text-align: right;
+
+    @include m.responsiveDesign('tablet') {
+      width: 80rem;
+    }
   }
 
   &__rectangle {
     background-color: v.$color-light;
     height: 1rem;
+
+    @include m.responsiveDesign('tablet') {
+      width: 80rem;
+    }
   }
 }

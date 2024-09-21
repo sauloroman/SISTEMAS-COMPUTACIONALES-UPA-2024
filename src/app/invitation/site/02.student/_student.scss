@@ -36,6 +36,10 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    @include m.responsiveDesign('tablet') {
+      font-size: 1.8rem;
+    }
   }
 
   &__text {
