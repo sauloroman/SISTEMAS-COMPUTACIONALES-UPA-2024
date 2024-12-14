@@ -2,6 +2,7 @@ import locationIcon from '../../../../assets/img/location-icon.png';
 import locationMessage from '../../../../assets/img/location-message.png';
 import lagoImage1 from '../../../../assets/img/lago-1.jpg';
 import lasPalmasImage from '../../../../assets/img/las-palmas.jpg';
+import parroquiaImage from '../../../../assets/img/parroquia.jpg'
 
 export const Locations = () => {
   return (
@@ -44,6 +45,53 @@ export const Locations = () => {
       </div>
 
       <div className="locations__card">
+        <p className="locations__type">Ceremonia Religiosa</p>
+        <p className="locations__date">27 Diciembre 2024</p>
+        <p className="locations__hour">07:00 PM - 08:00 PM</p>
+        <p className="locations__name">
+          Parroquia de Nuestra <br /> Señora de los Bosques
+        </p>
+        <p className="locations__address">
+          Montes Himalaya S/N, Los Bosques, 20120 Aguascalientes, Ags.
+        </p>
+        <button className="btn btn--brown locations__button">
+          <a target="_blank" href="https://maps.app.goo.gl/3GvcCUZvJKpJ9xjy9">
+            Ver Ubicación
+          </a>
+        </button>
+      </div>
+      <div className="locations__photo-box">
+        <img
+          src={parroquiaImage}
+          alt="Imagen de parroquia Nuestra señora de los bosques"
+          className="locations__photo"
+        />
+        <div className="locations__overlay"></div>
+      </div>
+
+      <div className="flex flex-column-center mt-4">
+        <img
+          className="locations__icon"
+          src={locationIcon}
+          alt="Icono de ubicacion"
+        />
+        <h2 className="heading__secondary">Fiesta</h2>
+        <img
+          className="locations__image locations__message"
+          src={locationMessage}
+          alt="Mensaje de ubicacion"
+        />
+      </div>
+
+      <div className="locations__photo-box">
+        <img
+          src={lagoImage1}
+          alt="Imagen de Salon Lago del Marqués"
+          className="locations__photo"
+        />
+        <div className="locations__overlay"></div>
+      </div>
+      <div className="locations__card">
         <p className="locations__type">Noche de Gala</p>
         <p className="locations__date">27 Diciembre 2024</p>
         <p className="locations__hour">08:00 PM - 02:00 AM</p>
@@ -58,14 +106,6 @@ export const Locations = () => {
             Ver Ubicación
           </a>
         </button>
-      </div>
-      <div className="locations__photo-box">
-        <img
-          src={lagoImage1}
-          alt="Imagen de bellagio"
-          className="locations__photo"
-        />
-        <div className="locations__overlay"></div>
       </div>
     </section>
   );
